@@ -1,0 +1,15 @@
+{
+  "name": "flisp",
+  "description": "An functional lisp in JS",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "node_modules/jasmine-node/bin/jasmine-node test/*.spec.js"
+  },
+  "devDependencies": {
+    "jasmine-node": "1.7.1",
+    "ramda": "0.18.0"
+  },
+  "bin": {
+  	"flisp": "./lib/lisp.js"
+  }
+}
