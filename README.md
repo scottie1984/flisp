@@ -21,7 +21,6 @@ Examples within files test.lisp and test2.lisp
 ## Todo
 
 * Support modules
-* Named function definitions
 * Reading from files (IO)
 * Interop with Node Modules
 * compile to js
