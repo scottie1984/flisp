@@ -153,6 +153,10 @@ describe('littleLisp', function() {
 		expect(t.run("((def foo (x y) (add x y)) (foo 4 3))")).toEqual([ 'FOO', 7 ]);
 	  });
 
+	  it('should allow a function to be defined with multiple statements and called', function() {
+		expect(t.run("((def foo (x) (let ((y 6)) (add x y))) (foo 4))")).toEqual([ 'FOO', 10 ]);
+	  });
+
 	  it('should allow a function to be defined and called later in module', function() {
 		expect(t.run("((def foo (x y) (add x y)) (1) (2) (foo 4 3))")).toEqual([ 'FOO', [ 1 ], [ 2 ], 7 ]);
 	  });
